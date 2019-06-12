@@ -1,0 +1,39 @@
+{
+  "name": "stock",
+  "version": "0.0.1",
+  "description": "Stock app.",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack --config webpack/webpack.local.js --mode development",
+    "build-dist": "webpack --config webpack/webpack.dist.js --mode production --progress --colors && sed -i -e 's?'`pwd`'?/home/sites/vhosts/{{ cookiecutter.project_slug }}.makimo.pl?g' webpack-stats.dist.json",
+    "watch": "webpack --config webpack/webpack.local.js --watch --mode development"
+  },
+  "author": "Team Yuml",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^2.0.1",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "imports-loader": "^0.8.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.19.0",
+    "webpack-assets-manifest": "^3.1.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-merge": "^4.1.4",
+    "webpack-notifier": "^1.7.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "moment": "^2.22.2",
+    "popper.js": "^1.14.4",
+    "vue": "^2.5.17"
+  }
+}
