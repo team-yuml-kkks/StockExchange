@@ -1,0 +1,25 @@
+/stock_exchange/settings/db.py
+/stock_exchange/settings/email.py
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+media
+
+### Node ###
+npm-debug.log*
+node_modules/
+
+### VirtualEnv###
+/env/[Bb]in
+/env/[Ii]nclude
+/env/[Ll]ib
+/env/[Ll]ib64
+/env/[Ll]ocal
+/env/[Ss]cripts
+pyvenv.cfg
+pip-selfcheck.json
