@@ -1,5 +1,5 @@
 Django==2.2.4
-djangorestframework==3.9.4
+djangorestframework==3.11.2
 psycopg2-binary==2.8.2
 django-crispy-forms==1.7.2
 django-mail-templated==2.6.5
